@@ -1,0 +1,12 @@
+tasks:
+  install:
+    image: sailci/purescript
+    command:
+      - bower
+    args:
+      - --allow-root
+      - install
+  test:
+    image: sailci/purescript
+    args:
+      - test
